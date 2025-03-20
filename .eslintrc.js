@@ -1,4 +1,9 @@
 module.exports = {
   root: true,
-  extends: '@react-native',
+  parser: '@babel/eslint-parser',
+  extends: ['@react-native'],
+  ignorePatterns: ['index.js', 'babel.config.js', 'App.js', 'AdminList.js', 'UserPanel.js'],
+  parserOptions: {
+    requireConfigFile: false,
+  },
 };
